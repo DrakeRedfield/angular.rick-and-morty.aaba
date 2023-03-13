@@ -1,0 +1,11 @@
+<div class="main-container">
+  <app-topnav (menuClicked)="drawer.toggle()"></app-topnav>
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer #drawer mode="side">
+      <app-sidenav (menuOptionClicked)="drawer.toggle()"></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <ng-content></ng-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
