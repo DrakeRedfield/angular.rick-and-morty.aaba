@@ -1,0 +1,23 @@
+:host {
+  width: inherit;
+}
+
+.card {
+  width: inherit;
+  min-width: 20rem;
+
+  .character-data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    picture img{
+      width: 7rem;
+    }
+
+    .character-info p{
+      margin-top: 0;
+      margin-bottom: 0.4rem;
+    }
+  }
+}
